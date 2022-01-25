@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.9.6 on win32)" generated="20210706 11:22:15.009" rpa="false" schemaversion="2">
+<suite id="s1" name="Sk" source="C:\Users\anurag.jain\OneDrive - Calsoft Pvt Ltd\Desktop\sikuli-practice\code\sk.robot">
+<test id="s1-t1" name="Test 1">
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<msg timestamp="20210706 11:22:17.572" level="INFO">Starting process:
+java -jar c:\users\anurag.jain\appdata\local\programs\python\python39\lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 61038 "C:\Users\anurag.jain\OneDrive - Calsoft Pvt Ltd\Desktop\sikuli-practice"</msg>
+<msg timestamp="20210706 11:22:17.579" level="INFO">Start sikuli java process on port 61038</msg>
+<msg timestamp="20210706 11:22:18.179" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" starttime="20210706 11:22:17.569" endtime="20210706 11:22:20.122"/>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>C:\\Users\\anurag.jain\\OneDrive - Calsoft Pvt Ltd\\Desktop\\sikuli-practice\\images</arg>
+<doc>Add image path</doc>
+<msg timestamp="20210706 11:22:20.138" level="INFO">Params: [C:\Users\anurag.jain\OneDrive - Calsoft Pvt Ltd\Desktop\sikuli-practice\images]</msg>
+<status status="PASS" starttime="20210706 11:22:20.123" endtime="20210706 11:22:20.138"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>firefox.PNG</arg>
+<doc>Click</doc>
+<msg timestamp="20210706 11:22:21.240" level="INFO">Params: [firefox.PNG]</msg>
+<msg timestamp="20210706 11:22:21.240" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1625550740521.png'/&gt;
+[log] CLICK on L[416,747]@S(0) (548 msec)</msg>
+<status status="PASS" starttime="20210706 11:22:20.138" endtime="20210706 11:22:21.240"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<arg>google_search.PNG</arg>
+<arg>10</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20210706 11:22:23.686" level="INFO">Params: [google_search.PNG, 10]</msg>
+<msg timestamp="20210706 11:22:23.686" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1625550743649.png'/&gt;</msg>
+<status status="PASS" starttime="20210706 11:22:21.240" endtime="20210706 11:22:23.686"/>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<arg>google_search.PNG</arg>
+<arg>google.com</arg>
+<doc>Input text
+ Image could be empty</doc>
+<msg timestamp="20210706 11:22:25.669" level="INFO">Params: [google_search.PNG, google.com]
+Input Text:
+google.com</msg>
+<msg timestamp="20210706 11:22:25.670" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1625550744082.png'/&gt;
+[log] CLICK on L[675,302]@S(0) (553 msec)
+[log]  TYPE "google.com"</msg>
+<status status="PASS" starttime="20210706 11:22:23.742" endtime="20210706 11:22:25.670"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>ENTER</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20210706 11:22:25.746" level="INFO">Params: [ENTER]
+[log]  TYPE "#ENTER."</msg>
+<status status="PASS" starttime="20210706 11:22:25.671" endtime="20210706 11:22:25.747"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210706 11:22:30.757" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210706 11:22:25.748" endtime="20210706 11:22:30.757"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>close.PNG</arg>
+<doc>Click</doc>
+<msg timestamp="20210706 11:22:33.956" level="INFO">Params: [close.PNG]</msg>
+<msg timestamp="20210706 11:22:33.956" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1625550753827.png'/&gt;</msg>
+<msg timestamp="20210706 11:22:33.956" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(close.PNG) S: 0.7</msg>
+<status status="FAIL" starttime="20210706 11:22:30.757" endtime="20210706 11:22:33.956"/>
+</kw>
+<status status="FAIL" starttime="20210706 11:22:17.568" endtime="20210706 11:22:33.956">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(close.PNG) S: 0.7</status>
+</test>
+<status status="FAIL" starttime="20210706 11:22:15.011" endtime="20210706 11:22:33.958"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Sk">Sk</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
